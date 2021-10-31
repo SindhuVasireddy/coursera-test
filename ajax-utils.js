@@ -7,6 +7,7 @@ var ajaxUtils = {};
 // Returns an HTTP request object
 function getRequestObject() {
   if (global.XMLHttpRequest) {
+    console.log(global.XMLHttpRequest);
     return (new XMLHttpRequest());
   } 
   else if (global.ActiveXObject) {
